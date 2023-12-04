@@ -1,5 +1,3 @@
-/* https://rachacuca.com.br/logica/problemas/navios-no-porto/ */
-
 nacionalidade(brasileiro).
 nacionalidade(espanhol).
 nacionalidade(grego).
