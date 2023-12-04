@@ -18,3 +18,12 @@ run:
 
 clean:
 	rm -f $(TARGET)
+
+teste:
+	$(SWIPL) -o teste -c navios.pl
+
+run_teste:
+	./teste
+
+clean_teste:
+	rm -f teste
