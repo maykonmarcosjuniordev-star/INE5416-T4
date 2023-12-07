@@ -53,7 +53,6 @@ noCanto(X,Lista) :- last(Lista,X).
 noCanto(X,[X|_]).
 
 solucao(Fila) :-
-
     Fila = [
         homem(Cor1, Nome1, Perfume1, Preco1, Companhia1, Idade1),
         homem(Cor2, Nome2, Perfume2, Preco2, Companhia2, Idade2),
@@ -152,3 +151,11 @@ solucao(Fila) :-
 
     idade(Idade1), idade(Idade2), idade(Idade3), idade(Idade4), idade(Idade5),
     todos_diferentes([Idade1, Idade2, Idade3, Idade4, Idade5]).
+
+% Função Principal
+:- initialization(main).
+main :-
+    solucao(Fila),
+    nl,
+    write(Fila),
+    nl, nl.
